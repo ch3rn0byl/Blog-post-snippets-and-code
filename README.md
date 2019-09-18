@@ -1,2 +1,2 @@
-# Blog-post-snippets-and-code
-asdf
+# Blog posts snippets and code
+House the code from the blog
