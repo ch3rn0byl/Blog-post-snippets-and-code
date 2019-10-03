@@ -9,8 +9,10 @@ except ModuleNotFoundError as e:
     print('[!] pip install <package>')
     sys.exit(-1)
 
+# Delete the below three lines if you have Python 2 only
 if sys.version_info.major != 3:
     print('[!] This needs to be ran under Python 3')
+    print('[!] python3 {} -k keywords'.format(sys.argv[0]))
     sys.exit(1)
 
 def getCases():
