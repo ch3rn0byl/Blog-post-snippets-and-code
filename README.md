@@ -1,2 +1,2 @@
 # Blog posts snippets and code
-House the code from the blog
+The place for code to live at
