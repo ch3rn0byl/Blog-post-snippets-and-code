@@ -115,7 +115,7 @@ NTSTATUS SetDACL(PDEVICE_OBJECT& DeviceObject)
 	if (!NT_SUCCESS(Status))
 	{
 #ifndef _DEBUG
-		DbgPrint("[%s::%d] Unable to obtain a handle.\n", __FUNCTION__, __LINE__, Status);
+		DbgPrint("[%s::%d] Failed with status: 0x%08x\n", __FUNCTION__, __LINE__, Status);
 #endif 
 		goto CleanUpAndExit;
 	}
