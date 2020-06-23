@@ -29,7 +29,7 @@ NTSTATUS SetDACL(PDEVICE_OBJECT& DeviceObject)
 		goto CleanUpAndExit;
 	}
 
-	// Create the ACL to allow Local System
+	// Create the ACE to allow Local System
 	Status = RtlAddAccessAllowedAce(pAclStructure, ACL_REVISION, FILE_ALL_ACCESS, SeExports->SeLocalSystemSid);
 	if (!NT_SUCCESS(Status))
 	{
@@ -39,7 +39,7 @@ NTSTATUS SetDACL(PDEVICE_OBJECT& DeviceObject)
 		goto CleanUpAndExit;
 	}
 
-	// Create an ACL to allow for Administrators
+	// Create an ACE to allow for Administrators
 	Status = RtlAddAccessAllowedAce(pAclStructure, ACL_REVISION, FILE_ALL_ACCESS, SeExports->SeAliasAdminsSid);
 	if (!NT_SUCCESS(Status))
 	{
