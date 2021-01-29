@@ -1,2 +1,2 @@
-# Blog posts snippets and code
+# Blog post: Snippets and Code
 The place for code to live at
